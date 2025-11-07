@@ -136,5 +136,45 @@
         "action": "login",
         "username": "admin",
         "details": {}
+    },
+    {
+        "timestamp": "2025-11-07 12:04:51",
+        "action": "login",
+        "username": "admin",
+        "details": {}
+    },
+    {
+        "timestamp": "2025-11-07 12:07:27",
+        "action": "login",
+        "username": "admin",
+        "details": {}
+    },
+    {
+        "timestamp": "2025-11-07 12:22:41",
+        "action": "login",
+        "username": "admin",
+        "details": {}
+    },
+    {
+        "timestamp": "2025-11-07 12:25:27",
+        "action": "login",
+        "username": "admin",
+        "details": {}
+    },
+    {
+        "timestamp": "2025-11-07 12:39:38",
+        "action": "upload_dataset",
+        "username": "admin",
+        "details": {
+            "filename": "cg_cleaned_dataset.csv"
+        }
+    },
+    {
+        "timestamp": "2025-11-07 12:39:44",
+        "action": "upload_dataset",
+        "username": "admin",
+        "details": {
+            "filename": "cg_cleaned_dataset.csv"
+        }
     }
 ]

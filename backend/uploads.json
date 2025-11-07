@@ -19,5 +19,19 @@
         "filetype": "photo",
         "path": "uploads\\Gemini_Generated_Image_vq1yf3vq1yf3vq1y.png",
         "timestamp": "2025-11-04 23:37:32"
+    },
+    {
+        "username": "admin",
+        "filename": "cg_cleaned_dataset.csv",
+        "filetype": "dataset",
+        "path": "uploads\\cg_cleaned_dataset.csv",
+        "timestamp": "2025-11-07 12:39:38"
+    },
+    {
+        "username": "admin",
+        "filename": "cg_cleaned_dataset.csv",
+        "filetype": "dataset",
+        "path": "uploads\\cg_cleaned_dataset.csv",
+        "timestamp": "2025-11-07 12:39:44"
     }
 ]

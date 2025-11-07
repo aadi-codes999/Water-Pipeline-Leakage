@@ -71,7 +71,28 @@ const PredictAndReport = () => {
           {predictions.length === 0 ? (
             <div className="text-muted-foreground">No predictions yet</div>
           ) : (
-            <pre className="text-xs bg-background p-3 rounded overflow-auto">{JSON.stringify(predictions, null, 2)}</pre>
+            <div className="text-xs bg-background p-3 rounded overflow-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="text-left border-b">
+                    {Object.keys(predictions[0]).map(key => (
+                      <th key={key} className="p-2">{key}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {predictions.map((pred, idx) => (
+                    <tr key={idx} className="border-b">
+                      {Object.values(pred).map((val: any, i) => (
+                        <td key={i} className="p-2">
+                          {typeof val === 'object' ? JSON.stringify(val) : String(val)}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           )}
         </div>
 

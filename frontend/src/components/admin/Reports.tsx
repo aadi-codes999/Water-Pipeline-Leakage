@@ -59,7 +59,11 @@ const Reports = () => {
                   {/* We'll render a basic bar chart */}
                   <div style={{ width: "100%", height: 240 }}>
                     {/* Recharts usage is handled by ChartContainer wrapper in apps where needed; keep minimal here */}
-                    <pre className="text-xs text-muted-foreground">{JSON.stringify(data.graph_data, null, 2)}</pre>
+                    <pre className="text-xs text-muted-foreground">
+                      {Array.isArray(data.graph_data)
+                        ? JSON.stringify(data.graph_data, null, 2)
+                        : 'No graph data available'}
+                    </pre>
                   </div>
                 </ChartContainer>
               </div>

@@ -92,10 +92,14 @@ const ViewLogs = () => {
                       {log.level && (
                         <span className="uppercase font-bold">[{log.level}]</span>
                       )}{" "}
-                      {log.message || JSON.stringify(log)}
+                      {log.action || log.message || "System Event"}
                     </p>
                     {log.details && (
-                      <p className="text-sm text-muted-foreground">{log.details}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {typeof log.details === 'string'
+                          ? log.details
+                          : JSON.stringify(log.details, null, 2)}
+                      </p>
                     )}
                   </div>
                 </div>
